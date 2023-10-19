@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortener URL</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="flex items-center justify-center min-h-screen p-3 bg-pale-blue">
+    <div class="wrapper bg-white p-5 rounded-md w-custom">
+      <form action="#" class="h-7 w-full flex items-center relative">
+        <i
+          class="url-icon uil uil-link absolute w-12 text-center text-2xl text-slate-500 pointer-events-none"
+        ></i>
+        <input
+          type="text"
+          placeholder="Enter or paste a long url"
+          class="h-full w-full py-5 pr-28 pl-11 focus:outline-none border-2 border-slate-300 rounded-md text-xl caret-pale-blue placeholder:text-gray valid:border-pale-blue transition-all duration-100 ease-in"
+          required
+        />
+        <button
+          class="absolute right-2 py-0.5 px-3 border-none text-white text-lg focus:outline-none rounded cursor-pointer bg-pale-blue"
+        >
+          Shorten
+        </button>
+      </form>
+      <div class="count my-5 mx-0 flex pr-1 justify-between">
+        <span
+          >Total Links: <span>10</span> & Total Clicks: <span>140</span></span
+        >
+        <a href="">Clear All</a>
+      </div>
+      <div class="urls-area">
+        <div class="title">
+          <li>Shorten URL</li>
+          <li>Original URL</li>
+          <li>Clicks</li>
+          <li>Action</li>
+        </div>
+      </div>
+      <div class="data">
+        <div class="title">
+          <li><a href="">example.com/adbcd</a></li>
+          <li>16</li>
+          <li><a href="">Delete</a></li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
