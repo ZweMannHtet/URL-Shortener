@@ -29,26 +29,100 @@
         </button>
       </form>
       <div class="count my-5 mx-0 flex pr-1 justify-between items-center">
-        <span
-          >Total Links: <span>10</span> & Total Clicks: <span>140</span></span
+        <span class="text-lg"
+          >Total Links: <span class="font-normal">10</span> & Total Clicks:
+          <span class="font-normal">140</span></span
         >
-        <a href="">Clear All</a>
+        <a href="" class="text-black hover:text-pale-blue">Clear All</a>
       </div>
-      <div class="urls-area">
-        <div class="title">
-          <li>Shorten URL</li>
-          <li>Original URL</li>
-          <li>Clicks</li>
-          <li>Action</li>
+      <div
+        class="urls-area scrollbar-none border border-slate-300 rounded-md mb-1 max-h-96 overflow-y-scroll"
+      >
+        <div class="title flex w-full justify-between">
+          <li
+            class="list-none w-full border-r border-solid border-pale-color text-center bg-li-back py-3 px-0 max-w-[30%]"
+          >
+            Shorten URL
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color text-center bg-li-back py-3 px-0 max-w-[45%]"
+          >
+            Original URL
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color text-center bg-li-back py-3 px-0 max-w-[11%]"
+          >
+            Clicks
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color text-center bg-li-back py-3 px-0 max-w-[14%]"
+          >
+            Action
+          </li>
+        </div>
+        <div class="data flex w-full justify-between odd:bg-li-back">
+          <li
+            class="list-none w-full border-r border-solid border-pale-color flex items-center justify-center py-2 px-3 break-all max-w-[30%]"
+          >
+            <a href="" class="hover:text-pale-blue hover:underline"
+              >example.com/adbcd</a
+            >
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color flex items-center justify-center py-2 px-3 break-all max-w-[45%]"
+          >
+            <a href="" class=""
+              >https://chat.openai.com/c/3a1661c0-858d-47e0-a141-20a459b88eab</a
+            >
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color flex items-center justify-center py-2 px-3 break-all max-w-[11%]"
+          >
+            16
+          </li>
+          <li
+            class="list-none w-full border-r border-solid border-pale-color flex items-center justify-center py-2 px-3 break-all max-w-[14%]"
+          >
+            <a
+              href=""
+              class="h-full w-full flex items-center justify-center hover:text-pale-blue hover:underline"
+              >Delete</a
+            >
+          </li>
         </div>
       </div>
-      <div class="data">
-        <div class="title">
-          <li><a href="">example.com/adbcd</a></li>
-          <li>16</li>
-          <li><a href="">Delete</a></li>
-        </div>
+    </div>
+
+    <div
+      class="blur-effect absolute h-full w-full bg-[rgba(0,0,0,0.01)] backdrop-blur-sm top-0 left-0"
+    ></div>
+
+    <div
+      class="popup-box absolute bg-slate-50 p-6 rounded-md w-popup-width shadow-lg shadow-indigo-500/40"
+    >
+      <div
+        class="info-box text-info-color bg-info-back border-1 border-slate-500 rounded-md p-3 text-xl"
+      >
+        Your short link is ready. You can also edit your short link now but
+        can't edit once you saved it.
       </div>
+      <form action="#" class="w-full items-center">
+        <label>Edit your shorten url</label>
+        <input
+          type="text"
+          spellcheck="false"
+          value="example.com/adbcd"
+          class="h-full w-full py-5 pr-28 pl-11 focus:outline-none border-2 border-slate-300 rounded-md text-xl caret-pale-blue placeholder:text-gray valid:border-pale-blue transition-all duration-100 ease-in"
+        />
+        <i
+          class="copy-icon uil uil-copy-alt w-12 text-center text-2xl text-slate-500 pointer-events-none"
+        ></i>
+        <button
+          class="absolute right-2 py-0.5 px-3 border-none text-white text-lg focus:outline-none rounded cursor-pointer bg-pale-blue"
+        >
+          Save
+        </button>
+      </form>
     </div>
   </body>
 </html>
