@@ -11,7 +11,8 @@ module.exports = {
         'li-back':'#f2f2f2',
         'info-color': '#0f5753',
         'info-back': '#bef4f1',
-        'info-border': '#7de8e3'
+        'info-border': '#7de8e3',
+        'error-color': '#721c24'
       },
       width:{
         'custom': '50rem',
